@@ -18,7 +18,7 @@ def about(request) : # rango/about
 
 	# Construct a dictionary to pass to the template engine as its context.
 	# Note the key boldmessage is the same as {{ boldmessage }} in the template!
-	context_dict = {'boldmessage': " This tutorial has been put together by Adham Tamimi" }
+	context_dict = {'Adham': " This tutorial has been put together by Adham Tamimi" }
 	# Return a rendered response to send to the client.
 	# We make use of the shortcut function to make our lives easier.
 	# Note that the first parameter is the template we wish to use.

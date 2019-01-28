@@ -2,18 +2,15 @@
 {% load staticfiles %} <!-- New line -->
 <html>
 <head>
-<title>Rango</title>
+<title>Rango About</title>
 </head>
 <body>
-<h1>Rango says...</h1>
+<strong>{{ Adham }}</strong><br />
 <div>
-This is the About Page! <br />
-    <strong>{{ boldmessage }}</strong><br />
-</div>
-<div>
-<a href="/rango">Index</a><br />
-    <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> 
-    <img src=" {{ MEDIA_URL }}cat.jpg" alt= "Picture of a cat" />
+<a href="/rango/">Index</a><br />
+     <br/>
+    <img src="{% static "images/rango.jpg" %}" alt="Picture of rango" /> <!-- New line -->
+<img src="{{MEDIA_URL}}cat.jpg"  alt="Picture of a cat" /> <!-- New line -->
 </div>
 </body>
 </html>
