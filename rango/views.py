@@ -69,7 +69,7 @@ def add_page(request, category_name_slug):
 				page.category = category
 				page.views = 0
 				page.save()
-				return show_category(request, category_name_slug)
+			return show_category(request, category_name_slug)
 		else:
 			print(form.errors)
 
