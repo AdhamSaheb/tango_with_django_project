@@ -121,10 +121,10 @@ def register(request):
 			if 'picture' in request.FILES:
 				profile.picture = request.FILES['picture']
 # Now we save the UserProfile model instance.
-				profile.save()
+			profile.save()
 # Update our variable to indicate that the template
 # registration was successful.
-				registered = True
+			registered = True
 		else :
 # Invalid form or forms - mistakes or something else?
 # Print problems to the terminal.
@@ -150,7 +150,7 @@ def user_login(request):
 		if user:
 			if user.is_active:
 				login(request, user)
-				return HttpResponseRedirect(reverse('rango:index'))
+				return HttpResponseRedirect(reverse('index'))
 			else:
 				return HttpResponse("Your Rango account is disabled.")
 		else:
@@ -169,4 +169,4 @@ def user_logout(request):
 
 	logout(request)
 
-	return HttpResponseRedirect(reverse('rango:index'))
+	return HttpResponseRedirect(reverse('index'))

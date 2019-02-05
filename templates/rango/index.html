@@ -23,7 +23,7 @@ hey there partner!
     <ul>
         {% for category in categories %}
         <li>
-        <a href="{% url 'rango:show_category' category.slug %}" >
+        <a href="{% url 'show_category' category.slug %}" >
             {{ category.name }}
         </a>
         </li>
