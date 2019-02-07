@@ -60,6 +60,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+MIDDLEWARE_CLASSES =[
+
+    'django.contrib.sessions.middleware.SessionMiddleware' ,
+
+]
 
 ROOT_URLCONF = 'tango_with_django_project.urls'
 
@@ -133,6 +138,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+#SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 # Static files (CSS, JavaScript, Images)
